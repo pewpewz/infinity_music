@@ -28,8 +28,6 @@ source config.sh
 
 function organizeFiles {
 
-	cd $MUSIC_FOLDER
-
 	musicFiles=()
 
 	while IFS= read line
@@ -87,7 +85,6 @@ function updatePlayList {
 
 
 if [ ! -f $playList ]; then
-	cd $MUSIC_FOLDER
 	./rename.sh
 	./create_list.sh
     echo "playlist.txt not found!"
@@ -97,6 +94,7 @@ if [ ! -f $playList ]; then
 fi
 echo "updating playlist... please hold..."
 
+cd $MUSIC_FILES
 organizeFiles
 createPlaylist
 updatePlayList

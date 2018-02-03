@@ -21,7 +21,9 @@
 # Check for proper priveliges
 # [ "`whoami`" = root ] || exec sudo "$0" "$@"
 
+source config.sh
 
+cd $MUSIC_FOLDER
 ####################### DIALOG ############################
 echo -en "\n BEWARE! Starting from current directory (`pwd`),"
 echo -en " files and directories with spaces in name  will be renamed automatically.\n"
