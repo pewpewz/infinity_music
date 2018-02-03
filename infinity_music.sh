@@ -47,6 +47,7 @@ function printFiles {
 }
 
 function createPlaylist {
+	deletePreviousPlaylist
 
 	i=0
 	while [ $i -le $NUMBER_OF_SONGS ]; do
@@ -56,11 +57,16 @@ function createPlaylist {
 	done
 }
 
+function deletePreviousPlaylist {
+	cd $MUSIC_FILES
+	rm *.mp3
+}
+
 function getRandomSong {
 
 	randomNum=$(( $RANDOM % ${#musicFiles[@]} ))
 	randomSong=${musicFiles[$randomNum]}
-	echo "Random song:${randomSong}"
+	echo "adding file:${randomSong}"
 	#copies song
 	ln -s ${randomSong} ${endMusicHolder}
 	#removes song from array
@@ -96,6 +102,7 @@ if [ ! -f $playList ]; then
     how many files you have in your music collection..."
 fi
 echo "updating playlist... please hold..."
+
 organizeFiles
 createPlaylist
 updatePlayList
