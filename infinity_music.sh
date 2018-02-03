@@ -60,7 +60,7 @@ function getRandomSong {
 	randomSong=${musicFiles[$randomNum]}
 	echo "adding file:${randomSong}"
 	#copies song
-	ln -s ${randomSong} ${endMusicHolder}
+	ln -s ${randomSong} ${MUSIC_FILES}
 	#removes song from array
 	deleteSong ${randomSong}
 }
