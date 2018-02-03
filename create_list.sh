@@ -16,6 +16,11 @@
 
 source config.sh
 
+function createPlayListFile {
+	cd $ROOT_FOLDER
+	touch "playlist.txt"
+}
+
 function aggregateAllMusicFiles {
 
 	musicFiles=()
@@ -25,11 +30,6 @@ function aggregateAllMusicFiles {
    		musicFiles+=("$dir")
    		echo "$dir" >> $playList
 	done
-}
-
-function createPlayListFile {
-	cd $ROOT_FOLDER
-	touch "playlist.txt"
 }
 
 createPlayListFile

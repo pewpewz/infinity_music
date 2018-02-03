@@ -85,6 +85,17 @@ function updatePlayList {
 	done
 }
 
+
+if [ ! -f $playList ]; then
+	cd $MUSIC_FOLDER
+	./rename.sh
+	./create_list.sh
+    echo "playlist.txt not found!"
+    echo "creating playlist.txt... please hold, 
+    this can take several minutes depending on 
+    how many files you have in your music collection..."
+fi
+echo "updating playlist... please hold..."
 organizeFiles
 createPlaylist
 updatePlayList
