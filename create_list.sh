@@ -2,9 +2,9 @@
 
 #=============================================================#
 # Name:         Infinity Music                                #
-# Description:  Recursively grab a random list of mp3 files   #
-#				from your collection of music to create       #
-#				a playlist.                                   #
+# Description:  Recursively grabs random list of music files  #
+#               from your collection of music to create       #
+#               a playlist.                                   #
 # Version:      ver 1.0                                       #
 # Data:         02.02.2018                                    #
 # Author:       Terry Lee                                     #
