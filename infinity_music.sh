@@ -47,7 +47,6 @@ function printFiles {
 }
 
 function createPlaylist {
-	deletePreviousPlaylist
 
 	i=0
 	while [ $i -le $NUMBER_OF_SONGS ]; do
@@ -55,11 +54,6 @@ function createPlaylist {
 		getRandomSong
 		((i+=1))
 	done
-}
-
-function deletePreviousPlaylist {
-	cd $MUSIC_FILES
-	rm *.mp3
 }
 
 function getRandomSong {
