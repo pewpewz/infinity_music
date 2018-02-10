@@ -15,11 +15,11 @@ this app will reference from the stored flat text file, thereby, enabling me to 
 song twice, even if my collection grows to 10,000 songs.
 
 # USAGE:
-		first, edit config.sh file
-[ ]		chmod +x infinity_music.sh
-[ ]		chmod +x rename.sh
-[ ]		chmod +x create_list.sh
-[ ]		chmod +x realpath.sh
-[ ]		create symbolic link: ln -s /your/path/realpath.sh /usr/local/bin/realpath
-[ ]		then type below to run:
-[ ]		./infinity_music.sh
+- [ ]		first, edit config.sh file
+- [ ]		chmod +x infinity_music.sh
+- [ ]		chmod +x rename.sh
+- [ ]		chmod +x create_list.sh
+- [ ]		chmod +x realpath.sh
+- [ ]		create symbolic link: ln -s /your/path/realpath.sh /usr/local/bin/realpath
+- [ ]		then type below to run:
+- [ ]		./infinity_music.sh
