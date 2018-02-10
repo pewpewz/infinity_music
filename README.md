@@ -1,4 +1,4 @@
-## infinity_music
+# infinity_music.sh
 Bash program to help create a playlist from your music collection
 
 This program will help you create a playlist with any number of songs you like out of all the songs you have.
