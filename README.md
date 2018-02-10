@@ -20,6 +20,7 @@ song twice, even if my collection grows to 10,000 songs.
 - chmod +x rename.sh
 - chmod +x create_list.sh
 - chmod +x realpath.sh
+- replace **/your/path/realpath.sh** with your actual installation path
 - create symbolic link: ln -s /your/path/realpath.sh /usr/local/bin/realpath
 - then type below to run:
   - ./infinity_music.sh
